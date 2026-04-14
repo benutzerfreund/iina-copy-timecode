@@ -41,8 +41,7 @@ The prefix is extracted from the file's title — everything before the first `.
 2. Open Finder and press **Cmd+Shift+G** (Go to Folder)
 3. Paste: `~/Library/Application Support/com.colliderli.iina/plugins/`
 4. Drag the `CopyTimecode.iinaplugin` folder from the unzipped download into the plugins folder
-5. Rename it to `CopyTimecode.iinaplugin-dev` (add `-dev` at the end)
-6. Quit and reopen IINA
+5. Quit and reopen IINA
 
 The plugin appears in **Settings > Plugins**.
 
