@@ -35,30 +35,25 @@ The prefix is extracted from the file's title — everything before the first `.
 - [IINA](https://iina.io) 1.4.0 or later (plugin support required)
 - macOS
 
-### Option 1: Development install (recommended for local use)
+### Option 1: Manual install (no terminal needed)
+
+1. [Download this repo as ZIP](https://github.com/benutzerfreund/iina-copy-timecode/archive/refs/heads/main.zip) and unzip it
+2. Open Finder and press **Cmd+Shift+G** (Go to Folder)
+3. Paste: `~/Library/Application Support/com.colliderli.iina/plugins/`
+4. Drag the `CopyTimecode.iinaplugin` folder from the unzipped download into the plugins folder
+5. Rename it to `CopyTimecode.iinaplugin-dev` (add `-dev` at the end)
+6. Quit and reopen IINA
+
+The plugin appears in **Settings > Plugins**.
+
+### Option 2: Terminal install
 
 Clone the repo and symlink into IINA's plugin directory:
 
 ```bash
-git clone https://github.com/AdobeTST/iina-copy-timecode.git
+git clone https://github.com/benutzerfreund/iina-copy-timecode.git
 ln -s "$(pwd)/iina-copy-timecode/CopyTimecode.iinaplugin" \
   ~/Library/Application\ Support/com.colliderli.iina/plugins/CopyTimecode.iinaplugin-dev
-```
-
-Restart IINA. The plugin appears in **Settings > Plugins**.
-
-### Option 2: Manual copy
-
-Copy the `CopyTimecode.iinaplugin` folder to:
-
-```
-~/Library/Application Support/com.colliderli.iina/plugins/
-```
-
-Then register it in IINA's preferences:
-
-```bash
-defaults write com.colliderli.iina "PluginEnabled.com.custom.copy-timecode" -bool true
 ```
 
 Restart IINA.
