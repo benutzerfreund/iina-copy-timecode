@@ -1,0 +1,11 @@
+{
+  "name": "Copy Timecode",
+  "identifier": "com.custom.copy-timecode",
+  "version": "1.0.0",
+  "description": "Press t to copy rounded timecode with filename prefix to clipboard",
+  "author": {
+    "name": "Custom"
+  },
+  "entry": "main.js",
+  "permissions": ["show-osd", "file-system"]
+}
